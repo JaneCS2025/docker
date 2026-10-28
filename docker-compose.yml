@@ -7,3 +7,6 @@ services:
       - redis
   redis:
     image: redis:7-alpine
+    volumes: ["redisdata:/data"]
+volumes:
+  redisdata: 
